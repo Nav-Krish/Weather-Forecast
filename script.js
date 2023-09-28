@@ -33,7 +33,7 @@ async function getWeatherData(){
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title text-center mb-2">${cityName} Weather Details</h5>
+                  <h5 class="card-title text-center mb-2">${res.name} Weather Details</h5>
                   <p class="card-text p-0 mb-1">Temperature: ${res.main.temp}°C / ${tempF}°F</p>
                   <p class="card-text p-0 mb-1">Feels Like: ${res.main.feels_like}°C / ${feelsF}°F</p>
                   <p class="card-text p-0 mb-1">Humidity: ${res.main.humidity}%</p>
