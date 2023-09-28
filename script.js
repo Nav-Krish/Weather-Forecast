@@ -1,5 +1,14 @@
 var weatherContainer=document.getElementById('weatherContainer')
 
+var enter=document.getElementById('cityName')
+enter.addEventListener("keypress", (e)=>{
+  if(e.key=="Enter"){
+    e.preventDefault();
+    // document.getElementById("myBtn").click();
+    getWeatherData()
+  }
+})
+
 async function getWeatherData(){
     try{
 
@@ -43,5 +52,3 @@ async function getWeatherData(){
         console.log("Error Found")
     }
 }
-
-
